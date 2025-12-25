@@ -1,0 +1,63 @@
+site_name: Modular Emote documentation
+
+extra_css:
+  - styles/extra.css
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - content.code.copy
+
+nav:
+  - Intro: index.md
+  - Installation: install.md
+
+  - User Guide:
+      - Overview: user-guide/index.md
+      - Components:
+          - ME Psha VRC Emote Installer: user-guide/components/VRCEmoteInstaller.md
+
+  - Creator Guide:
+      - Overview: publisher-guide/index.md
+      - Components:
+          - ME Psha VRC Emote Installer: publisher-guide/components/VRCEmoteInstaller-Publisher.md
+      - Templates:
+          - ME Action Layer: publisher-guide/templates/me-action-layer.md
+          - ME FX Layer: publisher-guide/templates/me-fx-layer.md
+      - Behaviours:
+          - Modular Emote Transition Settings: publisher-guide/behaviours/transition-settings.md
+
+  - FAQ: faq.md
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+        - locale: ko
+          name: 한국어
+          build: true
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+copyright: >
+  Copyright &copy; 2025–present <a href="https://psha.booth.pm/" target="_blank" rel="noopener">P*Connect</a> / <a href="https://x.com/P_ConnectStore" target="_blank" rel="noopener">P*sha</a>

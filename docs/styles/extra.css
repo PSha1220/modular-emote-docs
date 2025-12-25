@@ -1,0 +1,132 @@
+.psha-vcc-actions {
+    display: grid;
+    grid-template-columns: minmax(240px, 80%) auto;
+    gap: .5rem;
+    align-items: center;
+    width: 100%;
+    margin: .25rem 0 1rem 0;
+}
+
+.psha-vcc-actions a.psha-vcc-add {
+    width: 100% !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 1.2rem;
+    font-weight: 700;
+}
+
+.psha-vcc-actions a.psha-icon-btn {
+    min-width: 3.2rem;
+    height: 2.75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .9rem;
+    border: 1px solid rgba(120, 140, 255, .55) !important;
+    border-radius: .2rem;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: rgba(120, 140, 255, .95) !important;
+}
+
+.psha-vcc-actions a.psha-icon-btn:hover,
+.psha-vcc-actions a.psha-icon-btn:active,
+.psha-vcc-actions a.psha-icon-btn:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    border: 1px solid rgba(180, 180, 190, .85) !important;
+    color: rgba(180, 180, 190, .95) !important;
+}
+
+@media (max-width: 520px) {
+    .psha-vcc-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+.psha-vcc-actions a.psha-icon-btn,
+.psha-vcc-actions a.psha-icon-btn:hover,
+.psha-vcc-actions a.psha-icon-btn:active,
+.psha-vcc-actions a.psha-icon-btn:focus {
+    background: transparent !important;
+    color: inherit !important;
+    border-color: currentColor !important;
+    box-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* ---- Header language switcher: add label text ---- */
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link{
+  font-weight: 700 !important;
+  opacity: .95;
+  margin: .2rem 0 .1rem 0 !important;
+  padding: .28rem .55rem !important;
+  border-radius: .25rem;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-md-color-scheme="slate"]
+.md-sidebar--primary .md-nav__item--section > .md-nav__link{
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link::before{
+  content: "• ";
+  opacity: .6;
+}
+
+.md-sidebar--primary .md-nav__item--nested .md-nav__list .md-nav__link{
+  padding-left: .9rem !important;
+}
+
+.md-sidebar--primary .md-nav__list[data-md-level="3"] .md-nav__link{
+  padding-left: 1.25rem !important;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link,
+.md-sidebar--primary .md-nav__item--nested > a.md-nav__link{
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  border-radius: .25rem;
+}
+
+[data-md-color-scheme="slate"]
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"]
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link,
+[data-md-color-scheme="slate"]
+.md-sidebar--primary .md-nav__item--nested > a.md-nav__link{
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Target the real language button inside md-select (locale-safe) */
+.md-header__option .md-select > button.md-header__button.md-icon{
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+/* Add label to the RIGHT of the icon */
+.md-header__option .md-select > button.md-header__button.md-icon::after{
+  content: "Language▾";
+  font-size: .85rem;
+  font-weight: 600;
+  opacity: .95;
+  white-space: nowrap;
+}
+
+/* Localized label text per page language */
+html[lang="ja"] .md-header__option .md-select > button.md-header__button.md-icon::after{ content: "言語▾"; }
+html[lang="ko"] .md-header__option .md-select > button.md-header__button.md-icon::after{ content: "언어▾"; }
+
+/* Optional: hide the label on small screens to keep the header clean */
+@media (max-width: 900px){
+  .md-header__option .md-select > button.md-header__button.md-icon::after{
+    content: "";
+  }
+}

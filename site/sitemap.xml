@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/"/>
+    </url>
+    <url>
+        <loc>Nonefaq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonefaq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/faq/"/>
+    </url>
+    <url>
+        <loc>Noneinstall/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneinstall/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/install/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/install/"/>
+    </url>
+    <url>
+        <loc>Noneja/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/"/>
+    </url>
+    <url>
+        <loc>Noneja/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/faq/"/>
+    </url>
+    <url>
+        <loc>Noneja/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/install/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/install/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/install/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneko/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/"/>
+    </url>
+    <url>
+        <loc>Noneko/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/faq/"/>
+    </url>
+    <url>
+        <loc>Noneko/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/install/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/install/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/install/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Nonepublisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Nonepublisher-guide/behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Nonepublisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Nonepublisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Nonepublisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneuser-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneuser-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneja/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/"/>
+    </url>
+    <url>
+        <loc>Noneja/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonefaq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/faq/"/>
+    </url>
+    <url>
+        <loc>Noneja/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneinstall/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/install/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/faq/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/install/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/install/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/ja/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/faq/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/install/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/install/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/ko/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneja/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneja/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneko/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
+    </url>
+    <url>
+        <loc>Noneko/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonefaq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/faq/"/>
+    </url>
+    <url>
+        <loc>Noneko/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneinstall/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/install/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/faq/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/install/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/install/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/ja/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ja/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/faq/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/faq/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/install/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/install/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/install/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/publisher-guide/Behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/Behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/Behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/ko/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/ko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ko/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/behaviours/transition-settings/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/behaviours/transition-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/behaviours/transition-settings/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/components/VRCEmoteInstaller-Publisher/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/templates/me-action-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-action-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-action-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/publisher-guide/templates/me-fx-layer/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/publisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepublisher-guide/templates/me-fx-layer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/publisher-guide/templates/me-fx-layer/"/>
+    </url>
+    <url>
+        <loc>Noneko/user-guide/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/"/>
+    </url>
+    <url>
+        <loc>Noneko/user-guide/components/VRCEmoteInstaller/</loc>
+        <lastmod>2025-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="Noneko/user-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser-guide/components/VRCEmoteInstaller/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/user-guide/components/VRCEmoteInstaller/"/>
+    </url>
+</urlset>
