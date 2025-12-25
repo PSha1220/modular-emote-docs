@@ -1,4 +1,5 @@
 site_name: Modular Emote documentation
+site_url: https://psha1220.github.io/modular-emote-docs/
 
 extra_css:
   - styles/extra.css
