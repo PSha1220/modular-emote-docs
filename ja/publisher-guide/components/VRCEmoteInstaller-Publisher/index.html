@@ -1,0 +1,1735 @@
+<!DOCTYPE html><html lang="ja" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://psha1220.github.io/modular-emote-docs/ja/publisher-guide/components/VRCEmoteInstaller-Publisher/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../templates/me-action-layer/">
+      
+      
+        
+          <link rel="alternate" href="../../../../publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="ja">
+        
+          <link rel="alternate" href="../../../../ko/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ko">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>ME Psha VRC Emote Installer - Modular Emote documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vrc-emote-installer" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../../../" title="Modular Emote documentation" class="md-header__button md-logo" aria-label="Modular Emote documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modular Emote documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ME Psha VRC Emote Installer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="言語切り替え">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ko/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Intro
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../install/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-guide/" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Creator Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Modular Emote documentation" class="md-nav__button md-logo" aria-label="Modular Emote documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    Modular Emote documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2">
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/components/VRCEmoteInstaller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creator Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Creator Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本動作フロー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インスペクター構成（一覧）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) コンテンツ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) 開発者オプション
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) 開発者オプション">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-vrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1) VRC エモート設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2) メニュー設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3) アバターレイヤー設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-4) ME レイヤーマージ設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-5) ステート設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-6-me-write-defaults-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-6) ME Write Defaults OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) 詳細オプション
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Setup VRC Emote / デフォルト
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Setup VRC Emote / デフォルト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup VRC Emote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) 適用内容を表示（プレビュー）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-editor-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Editor Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/me-action-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Action Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/me-fx-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME FX Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Behaviours
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Behaviours
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../behaviours/transition-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular Emote Transition Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本動作フロー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インスペクター構成（一覧）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) コンテンツ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) 開発者オプション
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) 開発者オプション">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-vrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1) VRC エモート設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2) メニュー設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3) アバターレイヤー設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-4) ME レイヤーマージ設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-5) ステート設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-6-me-write-defaults-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-6) ME Write Defaults OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) 詳細オプション
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Setup VRC Emote / デフォルト
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Setup VRC Emote / デフォルト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup VRC Emote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) 適用内容を表示（プレビュー）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-editor-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Editor Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="vrc-emote-installer">VRC Emote Installer</h1>
+<p>このドキュメントは <strong>VRC Emote Installer のインスペクターレイアウト</strong>を基準に、<br>
+各項目が何を意味するか（自動検出／検証を含む）を整理したリファレンスです。</p>
+<blockquote>
+<p>前提</p>
+<ul>
+<li>本コンポーネントは基本的に <strong><code>VRCEmote</code>(Int) パラメータ基準の Emote 構造</strong>を前提に動作します。</li>
+<li>Unity Animator の基本概念（レイヤー／ステート／遷移／パラメータ）を理解している前提で書かれています。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="_1">基本動作フロー</h2>
+<p><code>VRC Emote Installer</code> は、アバターの <strong>Action / FX レイヤー</strong>に ME テンプレート（AnimatorController）をマージし、ビルド時に Emote 動作を構成します。  </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Basis.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Basis" src="../../../images/EmoteInstaller_Creator_Basis.png" width="250"></a></p>
+<ul>
+<li>オブジェクト（Installer）が <strong>無効</strong>になっている場合、その項目はビルド工程で <strong>スキップ</strong>されます。</li>
+<li>同一スロットに Installer が複数存在する場合、<strong>ヒエラルキー上位（ルートに近い）</strong>の項目が優先されます。</li>
+</ul>
+<hr>
+<h2 id="_2">インスペクター構成（一覧）</h2>
+<p>インスペクターは次の順序で構成されます。</p>
+<ol>
+<li><strong>コンテンツ</strong></li>
+<li><strong>開発者オプション</strong></li>
+<li><strong>Setup VRC Emote</strong> / <strong>デフォルト</strong></li>
+<li><strong>適用内容を表示（プレビュー）</strong></li>
+<li><strong>Editor Language</strong></li>
+</ol>
+<hr>
+<h2 id="1">1) コンテンツ</h2>
+<p>この領域は「現在の設定内容」を素早く確認するための場所です。</p>
+<ul>
+<li>
+<p><strong>名前</strong><br>
+  エモート名（<code>emoteName</code>）を表示します。 <strong>(A)</strong><br>
+  （この値は下の <em>開発者オプション → メニュー設定 → エモート名</em> と連動します。）</p>
+</li>
+<li>
+<p><strong>アイコンプレビュー</strong><br>
+  メニューアイコン（<code>menuIcon</code>）をプレビュー表示します。 <strong>(B)</strong></p>
+</li>
+<li>
+<p><strong>適用スロット番号 (1～8)</strong><br>
+  適用するスロット（<code>slotIndex</code>）を指定します。 <strong>(C)</strong><br>
+  （この値はメニュー／Animator マージ時に <code>VRCEmote == slot</code> 条件として使用されます。）</p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Content.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Content" src="../../../images/EmoteInstaller_Creator_Content.png" width="500"></a></p>
+<hr>
+<h2 id="2">2) 開発者オプション</h2>
+<p>この領域には自動検出／検証／詳細設定が含まれます。<br>
+問題が検出されると、右側に <strong>警告／エラーアイコン</strong>で状態が表示されます。 <strong>(A)</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Dev_1.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Dev_1" src="../../../images/EmoteInstaller_Creator_Dev_1.png" width="500"></a></p>
+<h3 id="2-1-vrc">2-1) VRC エモート設定</h3>
+<ul>
+<li><strong>対象 VRC エモートメニュー</strong><br>
+  カスタマイズする Emote メニューを設定します。<br>
+<strong>自動検出</strong>を使用します。</li>
+</ul>
+<hr>
+<h3 id="2-2">2-2) メニュー設定</h3>
+<p>メニューに実際に反映される項目です。</p>
+<ul>
+<li>
+<p><strong>エモート名</strong><br>
+  VRC Emote メニューに表示される名前です。</p>
+</li>
+<li>
+<p><strong>メニューアイコン</strong><br>
+  VRC Emote メニューに表示されるアイコンです。<br>
+  アイコンが Texture2D アセットではない、またはインポート設定が VRC 検証に不利な場合、<br>
+<strong>エラーボックス</strong>とともに<br>
+<strong>アイコン設定を修正 (256, Compressed)</strong> ボタンが表示されることがあります。</p>
+</li>
+<li>
+<p><strong>タイプ</strong><br>
+  コントロールタイプです。<code>None</code> は既存のタイプを保持します。</p>
+</li>
+<li>
+<p><strong>値</strong>（読み取り専用）<br>
+  スロット番号に対応する値です。</p>
+</li>
+<li>
+<p><strong>パラメータ</strong>（読み取り専用）<br>
+<code>VRCEmote, Int</code> と表示されます。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-3">2-3) アバターレイヤー設定</h3>
+<p>対象アバターのレイヤーコントローラを指定します。 </p>
+<ul>
+<li>
+<p><strong>アバター Action レイヤー</strong><br>
+  アバターディスクリプタの Action レイヤー設定を <strong>自動検出</strong>して使用します。</p>
+</li>
+<li>
+<p><strong>アバター FX レイヤー</strong><br>
+  アバターディスクリプタの FX レイヤー設定を <strong>自動検出</strong>して使用します。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-4-me">2-4) ME レイヤーマージ設定</h3>
+<ul>
+<li>
+<p><strong>ME Action レイヤー</strong><br>
+  マージに使用する Action テンプレート（AnimatorController）を指定します。<br>
+  テンプレート（ステート／遷移／パラメータ等）はサブステートマシンへ変換され、アバター Action レイヤーの指定区間（開始～終了）の間に挿入／置換されます。<br>
+  テンプレート内で <code>VRCEmote</code> パラメータを条件に使用している場合、その条件は <strong>指定したスロット値</strong>へ変換されます。<br>
+  基本的にテンプレートの <strong>0 番レイヤー</strong>を使用します。</p>
+</li>
+<li>
+<p><strong>ME FX レイヤー</strong><br>
+  詳細オプションの <strong>ME FX マージを使用</strong> を有効にすると、このフィールドが有効になります。<br>
+  マージに使用する FX テンプレート（AnimatorController）を指定します。<br>
+  制作者が用意した <strong>ME FX テンプレート（ステート／遷移／パラメータ等）</strong> を、アバター FX コントローラへ <strong>新規レイヤーとしてマージ／追加</strong>します。<br>
+  テンプレート内で <code>VRCEmote</code> パラメータを条件に使用している場合、その条件は <strong>指定したスロット値</strong>へ変換されます。<br>
+  基本的にテンプレートの <strong>0 番レイヤー</strong>を使用します。</p>
+</li>
+</ul>
+<blockquote>
+<p>同じ ME FX レイヤーを複数オブジェクトが共有している場合、構成／名前によって結果が変わる可能性があるため警告が表示されます。</p>
+</blockquote>
+<hr>
+<h3 id="2-5">2-5) ステート設定</h3>
+<ul>
+<li>
+<p><strong>開始アクションステート</strong><br>
+  アバター Action レイヤーで Emote 分岐が開始される基準ステート名です。 <strong>(A)</strong>  <br>
+<code>Setup VRC Emote</code> で自動検出するか、手動で入力できます。<br>
+  入力が空で Action レイヤーがデフォルト（または Null）の場合、既定で <code>Prepare Standing</code> を使用します。<br>
+  無効な場合はエラーが表示されます。</p>
+</li>
+<li>
+<p><strong>終了アクションステート</strong><br>
+  アバター Action レイヤーで Emote 分岐が終了される基準ステート名です。 <strong>(B)</strong>  <br>
+<code>Setup VRC Emote</code> で自動検出するか、手動で入力できます。<br>
+  入力が空で Action レイヤーがデフォルト（または Null）の場合、既定で <code>BlendOut Stand</code> を使用します。<br>
+  無効な場合はエラーが表示されます。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_State_1.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_State_1" src="../../../images/EmoteInstaller_Creator_State_1.png" width="500"></a></p>
+</li>
+<li>
+<p><strong>Action SM ルート</strong><br>
+  詳細オプションの <strong>アクションマージ範囲の自動追跡</strong> を有効にしたときに表示されます。 <strong>(C)</strong><br>
+  自動追跡がルート指定が必要と判断した場合、<code>Setup VRC Emote</code> 実行時にフィールドが自動的に有効化されることがあります。<br>
+  一般的な Action 構造ではない、または開始／終了ステートがサブステートマシン内部にある場合は、ルートを手動で指定してください。  </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_State_2.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_State_2" src="../../../images/EmoteInstaller_Creator_State_2.png" width="500"></a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-6-me-write-defaults-off">2-6) ME Write Defaults OFF</h3>
+<ul>
+<li><strong>ME Write Defaults OFF</strong><br>
+  ME レイヤー内の Write Defaults をすべて OFF に揃えるオプションです。（既定: true）</li>
+</ul>
+<hr>
+<h2 id="3">3) 詳細オプション</h2>
+<p>詳細オプションは「自動追跡／マージ範囲／FX マージ拡張」を扱います。</p>
+<ul>
+<li>
+<p><strong>アクションマージ範囲の自動追跡</strong><br>
+  Action 構造が複雑な場合、スコープ（ルート）ベースの検出を支援します。（Action SM ルートと併用）<br>
+  このオプションがオンのとき、追加フィールドが表示されます。（<strong>Action SM ルート</strong>）</p>
+</li>
+<li>
+<p><strong>ME FX マージを使用</strong><br>
+  表情／オブジェクトアニメーション／FX／サウンドなど「動作以外の演出」も一緒に提供したい場合に ME FX レイヤーを使用します。<br>
+  このオプションがオンのとき、追加フィールドが表示されます。（<strong>ME FX レイヤー</strong>）</p>
+</li>
+<li>
+<p><strong>+ 追加 ME FX</strong><br>
+  FX テンプレートを拡張として追加します。（最大 2 個）<br>
+  性能／最適化に関する案内が表示されます。</p>
+</li>
+<li>
+<p><strong>ME メニューアイコンに置き換え</strong><br>
+  最上位 Emote メニューアイコンを ME アイコンへ自動適用します。（既定: true）</p>
+</li>
+</ul>
+<hr>
+<h2 id="4-setup-vrc-emote">4) Setup VRC Emote / デフォルト</h2>
+<h3 id="setup-vrc-emote">Setup VRC Emote</h3>
+<p>ボタンを押すと、可能な範囲で設定を自動的に埋めるよう設計されています。</p>
+<p><strong>動作項目</strong></p>
+<ol>
+<li>アバターディスクリプターの探索</li>
+<li>Action / FX レイヤーの自動設定（必要時）</li>
+<li>Emote メニューの自動検出（必要時）</li>
+<li>開始／終了アクションステートの自動推定（可能な場合）</li>
+<li>（条件により）アクションマージ範囲の自動追跡に必要な値を自動設定</li>
+</ol>
+<p>問題がある場合、通常は <strong>Setup VRC Emote を先に実行</strong>するのが最も早いです。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_User_SetupEmote.png" data-desc-position="bottom"><img alt="Setup VRC Emote" src="../../../images/EmoteInstaller_User_SetupEmote.png" width="500"></a></p>
+<h3 id="_3">デフォルト</h3>
+<p>現在のコンポーネント値をデフォルトへ初期化し、Undo を記録します。</p>
+<hr>
+<h2 id="5">5) 適用内容を表示（プレビュー）</h2>
+<p>ビルド前に「メニューにどのような変更が入るか」を表で確認できます。</p>
+<p>表の列:</p>
+<ul>
+<li><strong>No.</strong></li>
+<li><strong>名前（前）</strong> / <strong>名前（後）</strong></li>
+<li><strong>タイプ（前）</strong> / <strong>タイプ（後）</strong></li>
+</ul>
+<p>現在のコンポーネントが実際に変更するスロットは、「後（After）」の値が強調表示されます。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Preview.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Preview" src="../../../images/EmoteInstaller_Creator_Preview.png" width="500"></a></p>
+<hr>
+<h2 id="6-editor-language">6) Editor Language</h2>
+<p>インスペクター UI 言語を選択します。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025–present <a href="https://psha.booth.pm/" target="_blank" rel="noopener">P*Connect</a> / <a href="https://x.com/P_ConnectStore" target="_blank" rel="noopener">P*sha</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "toc.follow", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

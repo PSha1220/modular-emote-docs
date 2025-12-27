@@ -1,0 +1,1735 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://psha1220.github.io/modular-emote-docs/publisher-guide/components/VRCEmoteInstaller-Publisher/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../templates/me-action-layer/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../../ja/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ja">
+        
+          <link rel="alternate" href="../../../ko/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ko">
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>ME Psha VRC Emote Installer - Modular Emote documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vrc-emote-installer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Modular Emote documentation" class="md-header__button md-logo" aria-label="Modular Emote documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modular Emote documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ME Psha VRC Emote Installer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ko/publisher-guide/components/VRCEmoteInstaller-Publisher/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Intro
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../install/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-guide/" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Creator Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Modular Emote documentation" class="md-nav__button md-logo" aria-label="Modular Emote documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Modular Emote documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2">
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/components/VRCEmoteInstaller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creator Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Creator Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Psha VRC Emote Installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspector-layout-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspector Layout at a Glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-developer-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Developer Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Developer Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-vrc-emote-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1) VRC Emote Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-menu-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2) Menu Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3-avatar-layer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3) Avatar Layer Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4-me-layer-merge-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-4) ME Layer Merge Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5-state-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-5) State Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-6-me-write-default-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-6) ME Write Default OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Advanced Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-vrc-emote-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Setup VRC Emote / Default
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Setup VRC Emote / Default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup VRC Emote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-show-applied-changes-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Show Applied Changes (Preview)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-editor-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Editor Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/me-action-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Action Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/me-fx-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME FX Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Behaviours
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Behaviours
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../behaviours/transition-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular Emote Transition Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspector-layout-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspector Layout at a Glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-developer-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Developer Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Developer Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-vrc-emote-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1) VRC Emote Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-menu-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2) Menu Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3-avatar-layer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3) Avatar Layer Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4-me-layer-merge-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-4) ME Layer Merge Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5-state-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-5) State Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-6-me-write-default-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-6) ME Write Default OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Advanced Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-vrc-emote-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Setup VRC Emote / Default
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Setup VRC Emote / Default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-vrc-emote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup VRC Emote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-show-applied-changes-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Show Applied Changes (Preview)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-editor-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Editor Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="vrc-emote-installer">VRC Emote Installer</h1>
+<p>This document is a reference that explains <strong>the VRC Emote Installer inspector layout</strong> and what each item means,
+including auto-detection and validation behavior.</p>
+<blockquote>
+<p>Assumptions</p>
+<ul>
+<li>This component is designed to work with an avatar that uses an <strong>Emote structure driven by the <code>VRCEmote</code> (Int) parameter</strong>.</li>
+<li>This document assumes you already understand the basics of Unity Animator (layers / states / transitions / parameters).</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="basic-workflow">Basic Workflow</h2>
+<p><code>VRC Emote Installer</code> merges ME templates (AnimatorController) into the avatar’s <strong>Action/FX layers</strong> and builds the final Emote behavior at build time.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Basis.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Basis" src="../../../images/EmoteInstaller_Creator_Basis.png" width="250"></a></p>
+<ul>
+<li>If the object (Installer) is <strong>disabled</strong>, it will be <strong>skipped</strong> during the build process.</li>
+<li>If multiple Installers exist for the same slot, the one <strong>higher in the hierarchy (closer to the root)</strong> takes priority.</li>
+</ul>
+<hr>
+<h2 id="inspector-layout-at-a-glance">Inspector Layout at a Glance</h2>
+<p>The inspector is organized in the following order:</p>
+<ol>
+<li><strong>Content</strong></li>
+<li><strong>Developer Options</strong></li>
+<li><strong>Setup VRC Emote</strong> / <strong>Default</strong></li>
+<li><strong>Show Applied Changes (Preview)</strong></li>
+<li><strong>Editor Language</strong></li>
+</ol>
+<hr>
+<h2 id="1-content">1) Content</h2>
+<p>This section is for quickly checking “what is currently configured”.</p>
+<ul>
+<li>
+<p><strong>Name</strong><br>
+  Displays the emote name (<code>emoteName</code>). <strong>(A)</strong><br>
+  (This value is linked to <em>Developer Options → Menu Settings → Emote Name</em>.)</p>
+</li>
+<li>
+<p><strong>Icon Preview</strong><br>
+  Previews the menu icon (<code>menuIcon</code>). <strong>(B)</strong></p>
+</li>
+<li>
+<p><strong>Target Slot No. (1 to 8)</strong><br>
+  Sets the target slot (<code>slotIndex</code>). <strong>(C)</strong><br>
+  (This value is used as the condition <code>VRCEmote == slot</code> when merging menus/animators.)</p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Content.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Content" src="../../../images/EmoteInstaller_Creator_Content.png" width="500"></a></p>
+<hr>
+<h2 id="2-developer-options">2) Developer Options</h2>
+<p>This section includes auto-detection, validation, and advanced configuration.<br>
+If an issue is detected, its status is shown with <strong>warning/error icons</strong> on the right. <strong>(A)</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Dev_1.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Dev_1" src="../../../images/EmoteInstaller_Creator_Dev_1.png" width="500"></a></p>
+<h3 id="2-1-vrc-emote-settings">2-1) VRC Emote Settings</h3>
+<ul>
+<li><strong>Target VRC Emote Menu</strong><br>
+  Sets the Emote menu field to customize.<br>
+  This uses <strong>auto-detection</strong>.</li>
+</ul>
+<hr>
+<h3 id="2-2-menu-settings">2-2) Menu Settings</h3>
+<p>These are the items that are actually applied to the menu.</p>
+<ul>
+<li>
+<p><strong>Emote Name</strong><br>
+  The name shown in the VRC Emote menu.</p>
+</li>
+<li>
+<p><strong>Menu Icon</strong><br>
+  The icon shown in the VRC Emote menu.<br>
+  If the icon is not a Texture2D asset, or its import settings are likely to fail VRC validation,
+  an <strong>error box</strong> may appear along with the <strong>Fix Icon Settings (256, Compressed)</strong> button.</p>
+</li>
+<li>
+<p><strong>Type</strong><br>
+  The control type. <code>None</code> keeps the existing type.</p>
+</li>
+<li>
+<p><strong>Value</strong> (Read-only)<br>
+  The value corresponding to the selected slot number.</p>
+</li>
+<li>
+<p><strong>Parameter</strong> (Read-only)<br>
+  Displayed as <code>VRCEmote, Int</code>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-3-avatar-layer-settings">2-3) Avatar Layer Settings</h3>
+<p>Specifies the target avatar layer controllers.</p>
+<ul>
+<li>
+<p><strong>Avatar Action Layer</strong><br>
+  Uses the avatar descriptor Action layer setting via <strong>auto-detection</strong>.</p>
+</li>
+<li>
+<p><strong>Avatar FX Layer</strong><br>
+  Uses the avatar descriptor FX layer setting via <strong>auto-detection</strong>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-4-me-layer-merge-settings">2-4) ME Layer Merge Settings</h3>
+<ul>
+<li>
+<p><strong>ME Action Layer</strong><br>
+  Assign the Action template (AnimatorController) to merge.<br>
+  The template contents (states/transitions/parameters, etc.) are converted into a Sub StateMachine and inserted/replaced
+  in the avatar Action layer between the configured range (Start → End).<br>
+  Any conditions in the template that use the <code>VRCEmote</code> parameter are converted to the <strong>selected slot value</strong>.<br>
+  By default, only <strong>layer 0</strong> of the template is used.</p>
+</li>
+<li>
+<p><strong>ME FX Layer</strong><br>
+  This field is enabled only when <strong>Use Merge ME FX</strong> is enabled in Advanced Options.<br>
+  Assign the FX template (AnimatorController) to merge.<br>
+  The prepared ME FX template (states/transitions/parameters, etc.) is merged/added to the avatar FX controller as a <strong>new layer</strong>.<br>
+  Any conditions in the template that use the <code>VRCEmote</code> parameter are converted to the <strong>selected slot value</strong>.<br>
+  By default, only <strong>layer 0</strong> of the template is used.</p>
+</li>
+</ul>
+<blockquote>
+<p>If multiple objects share the same ME FX layer, a warning may be shown because results can vary depending on configuration/naming.</p>
+</blockquote>
+<hr>
+<h3 id="2-5-state-settings">2-5) State Settings</h3>
+<ul>
+<li>
+<p><strong>Start Action State</strong><br>
+  The state name that marks where the emote branch begins in the avatar Action layer. <strong>(A)</strong><br>
+  You can auto-detect it with <strong>Setup VRC Emote</strong> or enter it manually.<br>
+  If this is empty and the Action layer is Default (or Null), <code>Prepare Standing</code> is assumed by default.<br>
+  If invalid, an error is shown.</p>
+</li>
+<li>
+<p><strong>End Action State</strong><br>
+  The state name that marks where the emote branch ends in the avatar Action layer. <strong>(B)</strong><br>
+  You can auto-detect it with <strong>Setup VRC Emote</strong> or enter it manually.<br>
+  If this is empty and the Action layer is Default (or Null), <code>BlendOut Stand</code> is assumed by default.<br>
+  If invalid, an error is shown.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_State_1.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_State_1" src="../../../images/EmoteInstaller_Creator_State_1.png" width="500"></a></p>
+</li>
+<li>
+<p><strong>Action SM Root</strong><br>
+  Shown only when <strong>Action SM Root Tracking</strong> is enabled in Advanced Options. <strong>(C)</strong><br>
+  If auto-tracking determines a scope is required, running <strong>Setup VRC Emote</strong> may automatically enable this field.<br>
+  If your Action structure is non-standard, or the Start/End states are inside a Sub StateMachine, set the root manually.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_State_2.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_State_2" src="../../../images/EmoteInstaller_Creator_State_2.png" width="500"></a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-6-me-write-default-off">2-6) ME Write Default OFF</h3>
+<ul>
+<li><strong>ME Write Default OFF</strong><br>
+  Forces all Write Defaults handling inside ME layers toward OFF. (Default: true)</li>
+</ul>
+<hr>
+<h2 id="3-advanced-options">3) Advanced Options</h2>
+<p>Advanced Options covers auto-tracking, merge scope, and FX merge extension.</p>
+<ul>
+<li>
+<p><strong>Action SM Root Tracking</strong><br>
+  Helps scope-based detection when the Action structure is complex. (Used with Action SM Root)<br>
+  When enabled, an additional field becomes available (<strong>Action SM Root</strong>).</p>
+</li>
+<li>
+<p><strong>Use Merge ME FX</strong><br>
+  Use an ME FX layer when you want to include non-motion effects such as facial expressions, object animation, FX, or sounds.<br>
+  When enabled, an additional field becomes available (<strong>ME FX Layer</strong>).</p>
+</li>
+<li>
+<p><strong>+ Additional ME FX</strong><br>
+  Adds extra FX templates for extension (up to 2).<br>
+  Performance/optimization guidance is displayed together.</p>
+</li>
+<li>
+<p><strong>Replace ME Menu Icon</strong><br>
+  Automatically replaces the top-level Emote menu icon with the ME icon. (Default: true)</p>
+</li>
+</ul>
+<hr>
+<h2 id="4-setup-vrc-emote-default">4) Setup VRC Emote / Default</h2>
+<h3 id="setup-vrc-emote">Setup VRC Emote</h3>
+<p>This button is designed to automatically fill settings as much as possible.</p>
+<p><strong>What it does</strong></p>
+<ol>
+<li>Find the avatar descriptor</li>
+<li>Auto-set Action/FX layers (if needed)</li>
+<li>Auto-detect the Emote menu (if needed)</li>
+<li>Auto-estimate Start/End Action States (when possible)</li>
+<li>(Depending on conditions) Auto-set values needed for Action SM Root Tracking</li>
+</ol>
+<p>When something is wrong, the fastest workflow is usually to <strong>run Setup VRC Emote first</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_User_SetupEmote.png" data-desc-position="bottom"><img alt="Setup VRC Emote" src="../../../images/EmoteInstaller_User_SetupEmote.png" width="500"></a></p>
+<h3 id="default">Default</h3>
+<p>Resets the current component values to defaults and records Undo.</p>
+<hr>
+<h2 id="5-show-applied-changes-preview">5) Show Applied Changes (Preview)</h2>
+<p>Before building, you can preview “what changes will be applied to the menu” in a table.</p>
+<p>Table columns:</p>
+<ul>
+<li><strong>No.</strong></li>
+<li><strong>Name →→</strong> / <strong>Name (After)</strong></li>
+<li><strong>Type →→</strong> / <strong>Type</strong></li>
+</ul>
+<p>Slots actually modified by this component are emphasized in the “After” values.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/EmoteInstaller_Creator_Preview.png" data-desc-position="bottom"><img alt="EmoteInstaller_Creator_Preview" src="../../../images/EmoteInstaller_Creator_Preview.png" width="500"></a></p>
+<hr>
+<h2 id="6-editor-language">6) Editor Language</h2>
+<p>Select the inspector UI language.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025–present <a href="https://psha.booth.pm/" target="_blank" rel="noopener">P*Connect</a> / <a href="https://x.com/P_ConnectStore" target="_blank" rel="noopener">P*sha</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.follow", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
