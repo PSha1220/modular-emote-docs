@@ -40,7 +40,8 @@ Emote（1～8 スロット）を簡単に導入できるようにするツール
 
 ## 導入解説動画
 
-- ユーザー向け導入動画：*(リンク追加予定)*
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
 
 ---
 

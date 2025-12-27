@@ -130,3 +130,37 @@ html[lang="ko"] .md-header__option .md-select > button.md-header__button.md-icon
     content: "";
   }
 }
+/* ---- Psha: Embedded YouTube (Square, ~70% width) ---- */
+.md-typeset .psha-yt{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: .5rem auto 1rem auto;
+}
+
+.md-typeset .psha-yt iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 1:1 container */
+.md-typeset .psha-yt--square{
+  padding-bottom: 100%;
+}
+
+/* About 70% of content width (centered). On small screens, use full width. */
+.md-typeset .psha-yt--70{
+  width: 70%;
+  max-width: 520px;
+}
+
+@media (max-width: 900px){
+  .md-typeset .psha-yt--70{
+    width: 100%;
+    max-width: 520px;
+  }
+}

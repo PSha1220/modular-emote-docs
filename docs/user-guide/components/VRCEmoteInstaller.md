@@ -39,7 +39,8 @@ You can expect it to work properly on avatars that meet the following conditions
 
 ## Setup Video
 
-- User setup video: *(link coming soon)*
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
 
 ---
 

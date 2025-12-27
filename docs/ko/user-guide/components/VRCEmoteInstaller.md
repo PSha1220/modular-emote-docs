@@ -40,7 +40,8 @@ Emote(1~8 슬롯)를 쉽게 도입할 수 있도록 도와주는 도구입니다
 
 ## 도입 설명 영상
 
-- 사용자 도입 영상: *(링크 추가 예정)*
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
 
 ---
 
