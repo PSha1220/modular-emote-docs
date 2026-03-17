@@ -65,6 +65,11 @@ If an issue is detected, its status is shown with **warning/error icons** on the
   Sets the Emote menu field to customize.  
   This uses **auto-detection**.
 
+- **Object Name**  
+  If you enter a value here, the object's name is changed to that name during avatar build.  
+  If this field is left empty, the original GameObject name is kept and no override is applied.  
+  This item becomes available only when **Use Merge ME FX** is enabled in Advanced Options.
+
 ---
 
 ### 2-2) Menu Settings
@@ -164,7 +169,11 @@ Advanced Options covers auto-tracking, merge scope, and FX merge extension.
 
 - **Use Merge ME FX**  
   Use an ME FX layer when you want to include non-motion effects such as facial expressions, object animation, FX, or sounds.  
-  When enabled, an additional field becomes available (**ME FX Layer**).
+  When enabled, additional related fields become available (**ME FX Layer**, **Auto Rename Object**, and **Object Name**).
+
+- **Auto Rename Object**  
+  Automatically renames the object during avatar build using the configured object name.  
+  This is useful when you want the built avatar to use a specific object name together with merged ME FX.
 
 - **+ Additional ME FX**  
   Adds extra FX templates for extension (up to 2).  

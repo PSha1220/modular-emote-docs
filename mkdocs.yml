@@ -35,6 +35,7 @@ nav:
           - Modular Emote Transition Settings: publisher-guide/behaviours/transition-settings.md
 
   - FAQ: faq.md
+  - Change Log: changelog.md
 
 plugins:
   - search

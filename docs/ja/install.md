@@ -13,7 +13,7 @@
 
 <div class="psha-vcc-actions" markdown>
 <a class="md-button md-button--primary psha-vcc-add"
-   href="vcc://vpm/addRepo?url=https://psha1220.github.io/Modular-Emote/index.json">
+   href="vcc://vpm/addRepo?url=https://psha1220.github.io/Psha-VPM-Repository/index.json">
   Add to VCC
 </a>
 
