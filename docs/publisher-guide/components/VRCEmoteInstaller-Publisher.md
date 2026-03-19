@@ -55,7 +55,7 @@ This section is for quickly checking “what is currently configured”.
 ## 2) Developer Options
 
 This section includes auto-detection, validation, and advanced configuration.  
-If an issue is detected, its status is shown with **warning/error icons** on the right. **(A)**
+If an issue is detected, its status is shown with **info/warning/error icons** on the right. **(A)**
 
   ![EmoteInstaller_Creator_Dev_1](../../images/EmoteInstaller_Creator_Dev_1.png){ width="500" }
 
@@ -65,9 +65,11 @@ If an issue is detected, its status is shown with **warning/error icons** on the
   Sets the Emote menu field to customize.  
   This uses **auto-detection**.
 
-- **Object Name**  
-  If you enter a value here, the object's name is changed to that name during avatar build.  
-  If this field is left empty, the original GameObject name is kept and no override is applied.  
+- **Build Object Name**  
+  Sets the object name that will be applied during avatar build.  
+  If this field is left empty, the current GameObject name is used at build time.  
+  When using **Use Merge ME FX**, it is recommended to set this value so later object renaming does not change animation paths and affect the build result.  
+  If this field is empty, pressing **Setup VRC Emote** fills it with the current GameObject name.  
   This item becomes available only when **Use Merge ME FX** is enabled in Advanced Options.
 
 ---
@@ -169,11 +171,9 @@ Advanced Options covers auto-tracking, merge scope, and FX merge extension.
 
 - **Use Merge ME FX**  
   Use an ME FX layer when you want to include non-motion effects such as facial expressions, object animation, FX, or sounds.  
-  When enabled, additional related fields become available (**ME FX Layer**, **Auto Rename Object**, and **Object Name**).
-
-- **Auto Rename Object**  
-  Automatically renames the object during avatar build using the configured object name.  
-  This is useful when you want the built avatar to use a specific object name together with merged ME FX.
+  When enabled, related fields become available (**ME FX Layer** and **Build Object Name**).  
+  If **Build Object Name** is empty while using ME FX, an **info message** is shown because later object renaming can change animation paths and affect the build result.  
+  In that case, pressing **Setup VRC Emote** fills **Build Object Name** with the current GameObject name.
 
 - **+ Additional ME FX**  
   Adds extra FX templates for extension (up to 2).  
@@ -197,6 +197,7 @@ This button is designed to automatically fill settings as much as possible.
 3. Auto-detect the Emote menu (if needed)
 4. Auto-estimate Start/End Action States (when possible)
 5. (Depending on conditions) Auto-set values needed for Action SM Root Tracking
+6. If **Use Merge ME FX** is enabled and **Build Object Name** is empty, fill it with the current GameObject name
 
 When something is wrong, the fastest workflow is usually to **run Setup VRC Emote first**.
 

@@ -1,5 +1,22 @@
 # Change Log
 
+## 1.3.5
+
+### Changed
+
+- Renamed **Object Name** to **Build Object Name** to clarify that it is the name applied during avatar build.
+- Removed the **Auto Rename Object** option. When **Use Merge ME FX** is enabled, **Build Object Name** is now shown directly.
+- **Setup VRC Emote** no longer renames the actual GameObject to match the Emote name.
+- Pressing **Setup VRC Emote** now fills **Build Object Name** with the current GameObject name when that field is empty.
+- Turning **Use Merge ME FX** off now clears **Build Object Name**, so re-enabling it starts from an empty state like the other related options.
+- Updated the editor-language localization for the new **Build Object Name** flow and guidance text.
+
+### Improved
+
+- Replaced the previous name mismatch warning with a shorter guidance message focused on **Build Object Name**.
+- Added an **info icon** to **Developer Options** when the **Build Object Name** guidance message is being shown.
+- Clarified the guidance for ME FX usage: when **Build Object Name** is left empty, changing the object name later can change animation paths and affect the build result.
+
 ## 1.3.2
 
 ### Added
