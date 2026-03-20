@@ -21,6 +21,12 @@ Emote(1~8 슬롯)를 쉽게 도입할 수 있도록 도와주는 도구입니다
 
 ---
 
+## 도입 설명 영상
+
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
+---
+
 ## 기본 도입 순서
 
 1. 애니메이션을 적용할 **아바타를 씬에 배치**합니다.
@@ -30,17 +36,25 @@ Emote(1~8 슬롯)를 쉽게 도입할 수 있도록 도와주는 도구입니다
 
     ![Emote Installer quick setup (A: drag under avatar, B: set slot index)](../../images/EmoteInstaller_User_A.png){ width="500" }
 
+### 레디얼 프리뷰
+
+<small>※ 1.5.1 버전부터 적용되는 사항입니다.</small>
+
+- 현재 슬롯이 어느 위치에 들어가는지 확인할 수 있습니다.
+- 현재 컴포넌트가 적용하는 슬롯은 선택 상태로 강조되어 표시됩니다.
+- 아이콘이 있는 항목과 이름만 있는 항목이 실제 메뉴에 가까운 형태로 표시됩니다.
+
+    ![Emote Installer radial preview](../../images/EmoteInstaller_Creator_Preview_Radial.png){ width="280" }
+
+### 리스트 프리뷰
+
+- 기존처럼 표 형태로 번호 / 이름(전후) / 타입(전후)를 비교할 수 있습니다.
+- 현재 컴포넌트가 실제로 변경하는 슬롯은 “후(After)” 값이 강조되어 표시됩니다.
+
 5. **VRChat SDK 메뉴에서 아바타를 Build**합니다.
 6. 게임에서 **레디얼 메뉴(기본: R 버튼 길게 누르기)** → **Emote 메뉴**에서 적용 결과를 확인합니다. **(C)**
 
     ![Emote Installer quick setup (C: Radial Menu)](../../images/EmoteInstaller_User_C.png){ width="500" }
-
-
----
-
-## 도입 설명 영상
-
-<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
 
 
 ---

@@ -21,27 +21,40 @@ Emote（1～8 スロット）を簡単に導入できるようにするツール
 
 ---
 
+## 導入解説動画
+
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
+---
+
 ## 基本導入手順
 
 1. アニメーションを適用する **アバターをシーンに配置**します。
 2. 配布された **ME プレハブをシーンに配置**します。
 3. ME プレハブを **アバターの子（下位）にドラッグして**入れます。 **(A)**
-4. Installer で **適用スロット番号 (1～8)** を設定します。 **(B)**
+4. Installer で **Slot Index (1～8)** を設定します。 **(B)**
 
     ![Emote Installer quick setup (A: drag under avatar, B: set slot index)](../../images/EmoteInstaller_User_A.png){ width="500" }
+
+### ラジアルプレビュー
+
+<small>※ 1.5.1 バージョンから適用される内容です。</small>
+
+- 現在のスロットがどの位置に入るか確認できます。
+- 現在のコンポーネントが適用するスロットは、選択状態として強調表示されます。
+- アイコンがある項目と名前だけの項目が、実際のメニューに近い形で表示されます。
+
+    ![Emote Installer radial preview](../../images/EmoteInstaller_Creator_Preview_Radial.png){ width="280" }
+
+### リストプレビュー
+
+- 従来どおり、番号 / 名前（変更前後） / タイプ（変更前後）を表形式で比較できます。
+- 現在のコンポーネントが実際に変更するスロットは、「After」側が強調表示されます。
 
 5. **VRChat SDK メニューからアバターを Build** します。
 6. ゲーム内で **ラジアルメニュー（デフォルト：R 長押し）** → **Emote メニュー**を開き、適用結果を確認します。 **(C)**
 
     ![Emote Installer quick setup (C: Radial Menu)](../../images/EmoteInstaller_User_C.png){ width="500" }
-
-
----
-
-## 導入解説動画
-
-<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
-
 
 ---
 

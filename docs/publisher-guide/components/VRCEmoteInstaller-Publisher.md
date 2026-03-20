@@ -1,52 +1,22 @@
-# VRC Emote Installer
+# VRC Emote Installer (Creator Guide)
 
-This document is a reference that explains **the VRC Emote Installer inspector layout** and what each item means,
-including auto-detection and validation behavior.
-
-> Assumptions
->
-> - This component is designed to work with an avatar that uses an **Emote structure driven by the `VRCEmote` (Int) parameter**.
-> - This document assumes you already understand the basics of Unity Animator (layers / states / transitions / parameters).
+`VRC Emote Installer` is a component you attach to a distributable Emote prefab  
+so users can add the prefab to their avatar and get an Emote slot without manual Animator editing.
 
 ---
 
-## Basic Workflow
+## 1) Basic Fields
 
-`VRC Emote Installer` merges ME templates (AnimatorController) into the avatar’s **Action/FX layers** and builds the final Emote behavior at build time.
+### 1-1) Emote Name / Icon / Slot / Type
 
-![EmoteInstaller_Creator_Basis](../../images/EmoteInstaller_Creator_Basis.png){ width="250" }
-
-- If the object (Installer) is **disabled**, it will be **skipped** during the build process.
-- If multiple Installers exist for the same slot, the one **higher in the hierarchy (closer to the root)** takes priority.
-
----
-
-## Inspector Layout at a Glance
-
-The inspector is organized in the following order:
-
-1. **Content**
-2. **Developer Options**
-3. **Setup VRC Emote** / **Default**
-4. **Show Applied Changes (Preview)**
-5. **Editor Language**
-
----
-
-## 1) Content
-
-This section is for quickly checking “what is currently configured”.
-
-- **Name**  
-  Displays the emote name (`emoteName`). **(A)**  
-  (This value is linked to *Developer Options → Menu Settings → Emote Name*.)
-
-- **Icon Preview**  
-  Previews the menu icon (`menuIcon`). **(B)**
-
-- **Target Slot No. (1 to 8)**  
-  Sets the target slot (`slotIndex`). **(C)**  
-  (This value is used as the condition `VRCEmote == slot` when merging menus/animators.)
+- **Emote Name**  
+  The name shown in the menu.
+- **Menu Icon**  
+  The icon shown in the menu.
+- **Slot Index**  
+  The target Emote slot number (1–8).
+- **Type**  
+  The menu control type.
 
 ![EmoteInstaller_Creator_Content](../../images/EmoteInstaller_Creator_Content.png){ width="500" }
 
@@ -59,22 +29,26 @@ If an issue is detected, its status is shown with **info/warning/error icons** o
 
   ![EmoteInstaller_Creator_Dev_1](../../images/EmoteInstaller_Creator_Dev_1.png){ width="500" }
 
-### 2-1) VRC Emote Settings
+### 2-1) Build Settings
+
+- **Build-time Object Name**  
+  Sets the object name that will be applied during avatar build.  
+  If this field is left empty, the current GameObject name is used at build time.  
+  When using **Use Merge ME FX**, it is recommended to set this value so later object renaming does not change animation paths and affect the build result.  
+  If this field is empty, pressing **Setup VRC Emote** fills it with the current GameObject name.  
+  This item is shown only when **Use Merge ME FX** is enabled in Advanced Options.
+
+---
+
+### 2-2) VRC Emote Settings
 
 - **Target VRC Emote Menu**  
   Sets the Emote menu field to customize.  
   This uses **auto-detection**.
 
-- **Build Object Name**  
-  Sets the object name that will be applied during avatar build.  
-  If this field is left empty, the current GameObject name is used at build time.  
-  When using **Use Merge ME FX**, it is recommended to set this value so later object renaming does not change animation paths and affect the build result.  
-  If this field is empty, pressing **Setup VRC Emote** fills it with the current GameObject name.  
-  This item becomes available only when **Use Merge ME FX** is enabled in Advanced Options.
-
 ---
 
-### 2-2) Menu Settings
+### 2-3) Menu Settings
 
 These are the items that are actually applied to the menu.
 
@@ -83,7 +57,7 @@ These are the items that are actually applied to the menu.
 
 - **Menu Icon**  
   The icon shown in the VRC Emote menu.  
-  If the icon is not a Texture2D asset, or its import settings are likely to fail VRC validation,
+  If the icon is not a Texture2D asset, or its import settings are likely to fail VRC validation,  
   an **error box** may appear along with the **Fix Icon Settings (256, Compressed)** button.
 
 - **Type**  
@@ -97,7 +71,7 @@ These are the items that are actually applied to the menu.
 
 ---
 
-### 2-3) Avatar Layer Settings
+### 2-4) Avatar Layer Settings
 
 Specifies the target avatar layer controllers.
 
@@ -109,11 +83,11 @@ Specifies the target avatar layer controllers.
 
 ---
 
-### 2-4) ME Layer Merge Settings
+### 2-5) ME Layer Merge Settings
 
 - **ME Action Layer**  
   Assign the Action template (AnimatorController) to merge.  
-  The template contents (states/transitions/parameters, etc.) are converted into a Sub StateMachine and inserted/replaced
+  The template contents (states/transitions/parameters, etc.) are converted into a Sub StateMachine and inserted/replaced  
   in the avatar Action layer between the configured range (Start → End).  
   Any conditions in the template that use the `VRCEmote` parameter are converted to the **selected slot value**.  
   By default, only **layer 0** of the template is used.
@@ -125,11 +99,11 @@ Specifies the target avatar layer controllers.
   Any conditions in the template that use the `VRCEmote` parameter are converted to the **selected slot value**.  
   By default, only **layer 0** of the template is used.
 
-  > If multiple objects share the same ME FX layer, a warning may be shown because results can vary depending on configuration/naming.
+  > If multiple objects share the same ME FX layer, a warning may be shown because results can vary depending on configuration or naming.
 
 ---
 
-### 2-5) State Settings
+### 2-6) State Settings
 
 - **Start Action State**  
   The state name that marks where the emote branch begins in the avatar Action layer. **(A)**  
@@ -147,84 +121,61 @@ Specifies the target avatar layer controllers.
 
 - **Action SM Root**  
   Shown only when **Action SM Root Tracking** is enabled in Advanced Options. **(C)**  
-  If auto-tracking determines a scope is required, running **Setup VRC Emote** may automatically enable this field.  
-  If your Action structure is non-standard, or the Start/End states are inside a Sub StateMachine, set the root manually.
-
-    ![EmoteInstaller_Creator_State_2](../../images/EmoteInstaller_Creator_State_2.png){ width="500" }
+  If auto-tracking determines that a scope is required, running **Setup VRC Emote** may enable this field automatically.
 
 ---
 
-### 2-6) ME Write Default OFF
-
-- **ME Write Default OFF**  
-  Forces all Write Defaults handling inside ME layers toward OFF. (Default: true)
-
----
-
-## 3) Advanced Options
-
-Advanced Options covers auto-tracking, merge scope, and FX merge extension.
+### 2-7) Advanced Options
 
 - **Action SM Root Tracking**  
-  Helps scope-based detection when the Action structure is complex. (Used with Action SM Root)  
-  When enabled, an additional field becomes available (**Action SM Root**).
+  Limits tracking to a specific Sub StateMachine scope in the Action layer.
 
 - **Use Merge ME FX**  
-  Use an ME FX layer when you want to include non-motion effects such as facial expressions, object animation, FX, or sounds.  
-  When enabled, related fields become available (**ME FX Layer** and **Build Object Name**).  
-  If **Build Object Name** is empty while using ME FX, an **info message** is shown because later object renaming can change animation paths and affect the build result.  
-  In that case, pressing **Setup VRC Emote** fills **Build Object Name** with the current GameObject name.
+  Merges the FX template into the avatar FX controller.
 
-- **+ Additional ME FX**  
-  Adds extra FX templates for extension (up to 2).  
-  Performance/optimization guidance is displayed together.
-
-- **Replace ME Menu Icon**  
-  Automatically replaces the top-level Emote menu icon with the ME icon. (Default: true)
+- **Use Additional ME FX**  
+  Expansion option for additional FX layers.
 
 ---
 
-## 4) Setup VRC Emote / Default
+## 3) Setup VRC Emote
 
-### Setup VRC Emote
+Pressing **Setup VRC Emote** automatically tries the following:
 
-This button is designed to automatically fill settings as much as possible.
-
-**What it does**
-
-1. Find the avatar descriptor
-2. Auto-set Action/FX layers (if needed)
-3. Auto-detect the Emote menu (if needed)
-4. Auto-estimate Start/End Action States (when possible)
-5. (Depending on conditions) Auto-set values needed for Action SM Root Tracking
-6. If **Use Merge ME FX** is enabled and **Build Object Name** is empty, fill it with the current GameObject name
-
-When something is wrong, the fastest workflow is usually to **run Setup VRC Emote first**.
-
-  ![Setup VRC Emote](../../images/EmoteInstaller_User_SetupEmote.png){ width="500" }
-
-### Default
-
-Resets the current component values to defaults and records Undo.
+1. Find the avatar’s default Action / FX layers
+2. Find the Emote menu in the ExpressionsMenu tree
+3. Find the start / end Action states
+4. Auto-track the Action SM Root when needed
+5. Fill **Build-time Object Name** with the current GameObject name if it is empty
 
 ---
 
-## 5) Show Applied Changes (Preview)
+## 4) Build-time Behavior
 
-Before building, you can preview “what changes will be applied to the menu” in a table.
-
-Table columns:
-
-- **No.**
-- **Name →→** / **Name (After)**
-- **Type →→** / **Type**
-
-Slots actually modified by this component are emphasized in the “After” values.
-
-  ![EmoteInstaller_Creator_Preview](../../images/EmoteInstaller_Creator_Preview.png){ width="500" }
+- Expressions Menu is cloned and patched without modifying the original asset directly.
+- Action / FX Animators are merged on the Virtual graph without modifying the original AnimatorController asset directly.
+- If multiple installers target the same slot, the higher installer in the hierarchy wins.
+- Even if multiple installers are attached to the same GameObject, only the topmost installer on that object applies **Build-time Object Name**.
 
 ---
 
-## 6) Editor Language
+## 5) Preview of Applied Changes
 
-Select the inspector UI language.
+The Preview lets you check what will actually be applied before building.
+
+### Radial Preview
+
+<small>※ Available from version 1.5.1.</small>
+
+- You can check where the current slot will be placed.
+- The slot affected by the current component is highlighted as selected.
+- Entries with icons and entries with text only are shown in a way that is closer to the in-game menu.
+
+  ![Emote Installer radial preview](../../images/EmoteInstaller_Creator_Preview_Radial.png){ width="280" }
+
+### List Preview
+
+- As before, you can compare slot number / name (before & after) / type (before & after) in a table-like view.
+- The slot that the current component actually changes is highlighted on the “After” side.
+
+---

@@ -20,27 +20,40 @@ You can expect it to work properly on avatars that meet the following conditions
 
 ---
 
+## Setup Video
+
+<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+
+---
+
 ## Quick Setup
 
 1. Place the **avatar** you want to apply the animation to in the scene.
 2. Place the released **ME prefab** in the scene.
 3. Drag the ME prefab **under the avatar (as a child)**. **(A)**
-4. In the Installer, set **Target Slot No. (1 to 8)**. **(B)**
+4. In the Installer, set **Slot Index (1 to 8)**. **(B)**
 
     ![Emote Installer quick setup (A: drag under avatar, B: set slot index)](../../images/EmoteInstaller_User_A.png){ width="500" }
+
+### Radial Preview
+
+<small>※ Available from version 1.5.1.</small>
+
+- You can check where the current slot will be placed.
+- The slot affected by the current component is highlighted as selected.
+- Entries with icons and entries with text only are shown in a way that is closer to the in-game menu.
+
+    ![Emote Installer radial preview](../../images/EmoteInstaller_Creator_Preview_Radial.png){ width="280" }
+
+### List Preview
+
+- As before, you can compare slot number / name (before & after) / type (before & after) in a table-like view.
+- The slot that the current component actually changes is highlighted on the “After” side.
 
 5. **Build the avatar** from the VRChat SDK menu.
 6. In-game, open the **Radial Menu** (default: hold **R**) → **Emote** to confirm it works. **(C)**
 
     ![Emote Installer quick setup (C: Radial Menu)](../../images/EmoteInstaller_User_C.png){ width="500" }
-
-
----
-
-## Setup Video
-
-<iframe width="580" height="580" src="https://www.youtube.com/embed/phu5HNi_exg" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
-
 
 ---
 

@@ -1,5 +1,17 @@
 # Change Log
 
+## 1.5.1
+
+### Changed
+
+- Renamed **Build Object Name** to **Build-time Object Name** to match the actual component overlay name.
+- Updated the related documentation and guidance text to use **Build Settings / Build-time Object Name**.
+
+### Added
+
+- Added a **Radial Preview** to Preview.
+- Added a radial/list preview switch so you can check the applied result before building.
+
 ## 1.3.5
 
 ### Changed
