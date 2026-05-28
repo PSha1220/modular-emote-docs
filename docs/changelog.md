@@ -1,5 +1,16 @@
 # Change Log
 
+## 1.5.2
+
+### Fixed
+
+- Fixed an issue where **Developer Options** were forcibly collapsed every time the installer inspector was enabled.
+
+### Improved
+
+- Improved editor usability by preserving the **Developer Options** foldout state during the current editor session.
+- The default state for new imports and fresh editor sessions remains collapsed, so regular users still see a clean inspector by default.
+
 ## 1.5.1
 
 ### Changed
